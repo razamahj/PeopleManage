@@ -1,0 +1,23 @@
+<h2>Add new Person</h2>
+<div>
+  <label>Title:</label>
+  <input [(ngModel)]="newPerson.title">
+</div>
+<div>
+  <label>First Name:</label>
+  <input [(ngModel)]="newPerson.firstName">
+</div>
+<div>
+  <label>Surname:</label>
+  <input [(ngModel)]="newPerson.surname">
+</div>
+<div>
+  <label>Sex:</label>
+  <input [(ngModel)]="newPerson.sex">
+</div>
+<div>
+  <label>Date Of Birth:</label>
+  <input type="date" [(ngModel)]="newPerson.dateOfBirth">
+</div>
+<button (click)="addPerson()">Add Person</button>
+    

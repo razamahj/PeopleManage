@@ -1,0 +1,25 @@
+<div *ngIf="person">
+  <h2>Edit Person</h2>
+  <div>
+    <label>Title:</label>
+    <input [(ngModel)]="person.title">
+  </div>
+  <div>
+    <label>First Name:</label>
+    <input [(ngModel)]="person.firstName">
+  </div>
+  <div>
+    <label>Surname:</label>
+    <input [(ngModel)]="person.surname">
+  </div>
+  <div>
+    <label>Sex:</label>
+    <input [(ngModel)]="person.sex">
+  </div>
+  <div>
+    <label>Date Of Birth:</label>
+    <input type="date" [(ngModel)]="person.dateOfBirth">
+  </div>
+  <button (click)="saveChanges()">Save Changes</button>
+  <button (click)="goBack()">Cancel</button>
+</div>
